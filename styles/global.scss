@@ -50,6 +50,20 @@ ul {
   }
 }
 
+.mobile {
+  @include s {
+    display: none;
+  }
+}
+
+.desktop {
+  display: none;
+
+  @include s {
+    display: block;
+  }
+}
+
 // _________________Hidden Scrollbar_________________
 /* Hidden scrollbar in Webkit-браузерах */
 ::-webkit-scrollbar {

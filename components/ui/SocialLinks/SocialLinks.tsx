@@ -7,13 +7,13 @@ import InstagramIcon from '@/icons/instagram.svg';
 import GithubIcon from '@/icons/github.svg';
 import LinkedInIcon from '@/icons/linkedin.svg';
 
-const SocialLinks = ({ className, ...props }: SocialLinksProps) => {
+const SocialLinks = ({ className, size = 's', ...props }: SocialLinksProps) => {
   return (
     <div className={cn(styles.wrapper, className)} {...props}>
       <a
         href='https://vk.com/art_zykov'
         target='_blank'
-        className={styles.icon}
+        className={cn(styles.icon, styles[size])}
       >
         <VKIcon />
       </a>
@@ -21,7 +21,7 @@ const SocialLinks = ({ className, ...props }: SocialLinksProps) => {
       <a
         href='https://t.me/skaterpunisher'
         target='_blank'
-        className={styles.icon}
+        className={cn(styles.icon, styles[size])}
       >
         <TelegramIcon />
       </a>
@@ -29,7 +29,7 @@ const SocialLinks = ({ className, ...props }: SocialLinksProps) => {
       <a
         href='https://www.instagram.com/art_zykov'
         target='_blank'
-        className={styles.icon}
+        className={cn(styles.icon, styles[size])}
       >
         <InstagramIcon />
       </a>
@@ -37,7 +37,7 @@ const SocialLinks = ({ className, ...props }: SocialLinksProps) => {
       <a
         href='https://github.com/SkaterPunisher'
         target='_blank'
-        className={styles.icon}
+        className={cn(styles.icon, styles[size])}
       >
         <GithubIcon />
       </a>
@@ -45,7 +45,7 @@ const SocialLinks = ({ className, ...props }: SocialLinksProps) => {
       <a
         href='https://www.linkedin.com/in/artem-zykov-651672256/'
         target='_blank'
-        className={cn(styles.icon, styles.iconLinked)}
+        className={cn(styles.icon, styles.iconLinked, styles[size])}
       >
         <LinkedInIcon />
       </a>

@@ -2,9 +2,8 @@
 
 .text {
   font-style: normal;
-  color: var(--black);
-  transition: color 0.2s;
-
+  line-height: normal;
+  color: var(--white);
   margin: 0;
 }
 
@@ -20,21 +19,17 @@
 }
 
 // _________________Sizes_________________
-// .s {
-//   font-size: 16px;
-//   font-weight: 400;
-//   line-height: 140%; /* 25.2px */
-
-//   @include s {
-//     font-size: 18px;
-//   }
-// }
+.s {
+  font-size: 18px;
+  font-weight: 400;
+}
 
 .m {
-  color: var(--white);
-
   font-size: 30px;
-  font-style: normal;
   font-weight: 500;
-  line-height: normal;
+}
+
+.l {
+  font-size: 42px;
+  font-weight: 600;
 }
