@@ -4,7 +4,6 @@
   font-style: normal;
   line-height: normal;
   color: var(--white);
-  margin: 0;
 }
 
 // _________________Colors_________________
@@ -25,8 +24,12 @@
 }
 
 .m {
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 500;
+
+  @include s {
+    font-size: 30px;
+  }
 }
 
 .l {

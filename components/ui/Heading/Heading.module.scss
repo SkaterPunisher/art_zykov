@@ -1,0 +1,16 @@
+@import '@/styles/app.scss';
+
+.heading {
+  color: #fff;
+  font-style: normal;
+  line-height: normal;
+}
+
+.h1 {
+  font-weight: 600;
+  font-size: 40px;
+
+  @include s {
+    font-size: 64px;
+  }
+}

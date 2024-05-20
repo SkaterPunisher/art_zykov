@@ -3,7 +3,7 @@ import '@/styles/global.scss';
 import Header from '@/components/shared/Header/Header';
 import Footer from '@/components/shared/Footer/Footer';
 
-import { Poppins } from '@next/font/google';
+import { Poppins } from 'next/font/google';
 
 export const metadata: Metadata = {
   title: 'Frontend Developer | Interactive and Responsive Websites',
@@ -27,7 +27,7 @@ export default function RootLayout({
       <body className={poppins.className}>
         <div className='layout'>
           <Header />
-          <div>{children}</div>
+          <div className='content'>{children}</div>
           <Footer />
         </div>
       </body>

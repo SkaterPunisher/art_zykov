@@ -1,0 +1,43 @@
+@import '@/styles/app.scss';
+
+.section {
+  position: relative;
+  z-index: 2;
+
+  .heading {
+    position: relative;
+    z-index: 2;
+    text-wrap: balance;
+  }
+
+  .description {
+    position: relative;
+    z-index: 2;
+    padding-left: 20px;
+    text-wrap: balance;
+    color: var(--gray);
+
+    @include s {
+      padding-left: 60px;
+      max-width: 80%;
+    }
+  }
+
+  .button {
+    position: relative;
+    z-index: 2;
+    margin-left: 40px;
+
+    @include s {
+      margin-left: 120px;
+      max-width: 80%;
+    }
+  }
+
+  .icon {
+    position: absolute;
+    z-index: 0;
+    right: -25%;
+    bottom: -70%;
+  }
+}

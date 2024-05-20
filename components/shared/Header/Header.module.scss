@@ -12,6 +12,16 @@
     padding: 20px 0px;
   }
 
+  @include l {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  @include ll {
+    margin-left: -80px;
+    margin-right: -80px;
+  }
+
   .logo {
     grid-column: start / endLogo;
   }
