@@ -26,11 +26,14 @@
   .button {
     position: relative;
     z-index: 2;
+  }
+
+  .link {
+    width: fit-content;
     margin-left: 40px;
 
     @include s {
       margin-left: 120px;
-      max-width: 80%;
     }
   }
 

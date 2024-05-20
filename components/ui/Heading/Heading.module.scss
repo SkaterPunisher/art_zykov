@@ -14,3 +14,12 @@
     font-size: 64px;
   }
 }
+
+.h2 {
+  font-weight: 600;
+  font-size: 28px;
+
+  @include s {
+    font-size: 48px;
+  }
+}

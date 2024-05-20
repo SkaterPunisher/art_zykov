@@ -17,7 +17,13 @@ const Hero = () => {
         interfaces that perform seamlessly across all devices.
       </Text>
 
-      <Button className={styles.button} size='m' placeholder='Get in Touch' />
+      <a
+        href='https://t.me/skaterpunisher'
+        target='_blank'
+        className={cn(styles.link)}
+      >
+        <Button className={styles.button} size='m' placeholder='Get in Touch' />
+      </a>
 
       <DrawingIcon className={styles.icon} />
     </section>
