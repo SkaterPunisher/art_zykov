@@ -1,9 +1,7 @@
 import Heading from '@/components/ui/Heading/Heading';
 import styles from './OtherSkills.module.scss';
 import cn from 'classnames';
-import { technologies } from '@/constants/technologies';
 import Text from '@/components/ui/Text/Text';
-import { defineLevel } from '@/lib/defineLevel';
 import { otherSkills } from '@/constants/otherSkills';
 
 const OtherSkills = () => {
