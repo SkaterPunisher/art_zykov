@@ -1,0 +1,40 @@
+@import '@/styles/app.scss';
+
+.text {
+  font-style: normal;
+  color: var(--black);
+  transition: color 0.2s;
+
+  margin: 0;
+}
+
+// _________________Colors_________________
+.white {
+  color: var(--white);
+}
+.black {
+  color: var(--black);
+}
+.gray {
+  color: var(--gray);
+}
+
+// _________________Sizes_________________
+// .s {
+//   font-size: 16px;
+//   font-weight: 400;
+//   line-height: 140%; /* 25.2px */
+
+//   @include s {
+//     font-size: 18px;
+//   }
+// }
+
+.m {
+  color: var(--white);
+
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

@@ -1,0 +1,120 @@
+@import '@/styles/app.scss';
+
+* {
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--background);
+
+  color: var(--black);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style-type: none;
+}
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --background: #0f1624;
+}
+
+.layout {
+  width: 100%;
+  padding: 0px 16px;
+
+  @include s {
+    padding: 0px 30px;
+  }
+
+  @include l {
+    margin: auto;
+    width: 1280px;
+  }
+}
+
+// _________________Hidden Scrollbar_________________
+/* Hidden scrollbar in Webkit-браузерах */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hidden scrollbar in IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none; /* for Internet Explorer and Edge */
+  scrollbar-width: none; /* for Firefox */
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+// _________________Spacers_________________
+.spacer-xs {
+  margin-bottom: 2px;
+
+  @include l {
+    margin-bottom: 4px;
+  }
+}
+.spacer-s {
+  margin-bottom: 6px;
+
+  @include s {
+    margin-bottom: 8px;
+  }
+}
+.spacer-m {
+  margin-bottom: 12px;
+
+  @include s {
+    margin-bottom: 16px;
+  }
+}
+.spacer-l {
+  margin-bottom: 24px;
+
+  @include s {
+    margin-bottom: 28px;
+  }
+  @include l {
+    margin-bottom: 32px;
+  }
+}
+.spacer-xl {
+  margin-bottom: 48px;
+
+  @include s {
+    margin-bottom: 56px;
+  }
+  @include l {
+    margin-bottom: 64px;
+  }
+}
+.spacer-xxl {
+  margin-bottom: 88px;
+
+  @include s {
+    margin-bottom: 112px;
+  }
+  @include l {
+    margin-bottom: 128px;
+  }
+}

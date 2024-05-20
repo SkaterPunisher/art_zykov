@@ -1,0 +1,46 @@
+@import '@/styles/app.scss';
+
+.content {
+  width: 100%;
+  padding: 0 15px;
+  padding-top: 50px;
+
+  .list {
+    margin: 40px 0;
+
+    li {
+      width: fit-content;
+
+      .item {
+        cursor: pointer;
+        text-wrap: nowrap;
+
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -3px;
+          height: 2px;
+          background-image: linear-gradient(
+            270deg,
+            #13adc7 0%,
+            #6978d1 66.67%,
+            #945dd6 100%
+          );
+          background-size: 0% 100%;
+        }
+
+        &:hover::after {
+          background-size: 100% 100%;
+        }
+      }
+    }
+  }
+
+  .links {
+    margin-top: 20px;
+  }
+}

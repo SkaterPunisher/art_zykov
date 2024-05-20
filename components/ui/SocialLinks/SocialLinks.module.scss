@@ -1,0 +1,30 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+
+  .icon {
+    cursor: pointer;
+    width: 24px;
+    transition: background-color 0.2s;
+
+    svg {
+      path {
+        transition: fill 0.2s;
+
+        fill: var(--white);
+      }
+    }
+  }
+
+  .iconLinked {
+    svg {
+      path {
+        transition: fill 0.2s;
+
+        fill: var(--background);
+      }
+    }
+  }
+}
