@@ -1,0 +1,34 @@
+@import '@/styles/app.scss';
+.section {
+  .heading {
+    text-wrap: balance;
+  }
+
+  .list {
+    padding: 0px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 30px;
+
+    @include s {
+      padding: 0px 60px;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .dot {
+        border-radius: 20px;
+        width: 5px;
+        height: 5px;
+        background: var(--white);
+      }
+
+      .text {
+        text-wrap: balance;
+      }
+    }
+  }
+}

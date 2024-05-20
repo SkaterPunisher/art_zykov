@@ -8,7 +8,7 @@ import Button from '@/components/ui/Button/Button';
 
 const Projects = () => {
   return (
-    <section className={cn(styles.section, 'spacer-xxl')}>
+    <section id='projects' className={cn(styles.section, 'spacer-xxl')}>
       <Heading tag='h2' className={cn(styles.heading, 'spacer-xl')}>
         Projects
       </Heading>
