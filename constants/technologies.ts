@@ -12,12 +12,8 @@ export const technologies = [
     score: 80,
   },
   {
-    title: 'Redux-Toolkit, RTK-Query, REST API',
+    title: 'Redux-Toolkit, RTK-Query, REST API, Axios',
     score: 90,
-  },
-  {
-    title: 'Redux-Thunk, Axios',
-    score: 50,
   },
   {
     title: 'Zustand',
