@@ -1,3 +1,4 @@
+import About from '@/components/shared/About/About';
 import Hero from '@/components/shared/Hero/Hero';
 import OtherSkills from '@/components/shared/OtherSkills/OtherSkills';
 import Projects from '@/components/shared/Projects/Projects';
@@ -10,6 +11,7 @@ export default function Home() {
       <Projects />
       <Technologies />
       <OtherSkills />
+      <About />
     </main>
   );
 }

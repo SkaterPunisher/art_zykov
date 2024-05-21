@@ -1,0 +1,74 @@
+@import '@/styles/app.scss';
+.section {
+  .heading {
+    text-wrap: balance;
+  }
+
+  .list {
+    padding: 0px 26px;
+    display: flex;
+    overflow-x: scroll;
+
+    gap: 10px 30px;
+
+    margin-left: -16px;
+    margin-right: -16px;
+
+    @include s {
+      padding: 0px 60px;
+      margin-left: -30px;
+      margin-right: -30px;
+    }
+
+    @include l {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 250px;
+      gap: 10px;
+      flex-shrink: 0;
+
+      position: relative;
+
+      @include s {
+        width: 320px;
+      }
+
+      .dot {
+        border-radius: 20px;
+        width: 20px;
+        height: 20px;
+        background: var(--white);
+      }
+
+      .line {
+        background-color: var(--white);
+        height: 10px;
+        width: 270px;
+        position: absolute;
+        top: 48px;
+        left: 130px;
+
+        @include s {
+          top: 60px;
+          left: 160px;
+          width: 350px;
+        }
+      }
+
+      .text {
+        text-wrap: balance;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
