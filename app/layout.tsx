@@ -3,6 +3,8 @@ import '@/styles/global.scss';
 import Header from '@/components/shared/Header/Header';
 import Footer from '@/components/shared/Footer/Footer';
 
+import { Analytics } from '@vercel/analytics/react';
+
 import { Poppins } from 'next/font/google';
 
 export const metadata: Metadata = {
@@ -30,6 +32,9 @@ export default function RootLayout({
           <div className='content'>{children}</div>
           <Footer />
         </div>
+
+        {/* 1 компонент ниже для аналитики Vercel */}
+        <Analytics />
       </body>
     </html>
   );
