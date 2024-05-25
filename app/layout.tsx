@@ -11,7 +11,8 @@ export const metadata: Metadata = {
   description:
     'Professional frontend web development including responsive design, speed optimization, and intuitive user interfaces. Creating solutions that exceed expectations',
   openGraph: {
-    title: 'Зыкова Оксана § Advanced English',
+    title:
+      'Art-Zykov | Frontend Developer | Interactive and Responsive Websites',
     description:
       'Professional frontend web development including responsive design, speed optimization, and intuitive user interfaces. Creating solutions that exceed expectations',
     images: {
