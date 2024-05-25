@@ -2,15 +2,27 @@ import type { Metadata } from 'next';
 import '@/styles/global.scss';
 import Header from '@/components/shared/Header/Header';
 import Footer from '@/components/shared/Footer/Footer';
+import { Poppins } from 'next/font/google';
 
 import { Analytics } from '@vercel/analytics/react';
 
-import { Poppins } from 'next/font/google';
-
 export const metadata: Metadata = {
-  title: 'Frontend Developer | Interactive and Responsive Websites',
+  title: 'Art-Zykov | Frontend Developer | Interactive and Responsive Websites',
   description:
     'Professional frontend web development including responsive design, speed optimization, and intuitive user interfaces. Creating solutions that exceed expectations',
+  openGraph: {
+    title: 'Зыкова Оксана § Advanced English',
+    description:
+      'Professional frontend web development including responsive design, speed optimization, and intuitive user interfaces. Creating solutions that exceed expectations',
+    images: {
+      url: '/images/opengraph-logo_art-zykov.webp',
+      alt: 'Art-Zykov | Frontend Developer',
+    },
+    type: 'website',
+    siteName: 'Art-Zykov | Frontend Developer',
+    url: `https://art-zykov.com`,
+    locale: 'en-EN',
+  },
 };
 
 const poppins = Poppins({
@@ -33,7 +45,6 @@ export default function RootLayout({
           <Footer />
         </div>
 
-        {/* 1 компонент ниже для аналитики Vercel */}
         <Analytics />
       </body>
     </html>
