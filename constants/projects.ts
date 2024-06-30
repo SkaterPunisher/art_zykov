@@ -6,7 +6,7 @@ export const projects = [
     stack:
       'Next.js v.13, TypeScript, i18next, Sanity.io, SCSS, Framer Motion, Zustand, react-hook-form, zod',
     img: '/images/english-zykova.webp',
-    button: 'Learn More',
+    button: 'Overview',
     href: 'https://english-zykova.ru/en',
   },
   {
@@ -26,7 +26,7 @@ export const projects = [
     stack:
       'Next.js v.13, Keycloak, TypeScript, Redux-Toolkit, RTK-Query, Framer motion, SCSS, Tailwind, MUI, chart.js, Jest',
     img: '/images/medalist.webp',
-    button: 'Learn More',
+    button: 'Code Review',
     href: 'https://github.com/nifontpro/medalist-front/tree/develop_Artem',
   },
   {
