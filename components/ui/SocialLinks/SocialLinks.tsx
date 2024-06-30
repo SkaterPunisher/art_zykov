@@ -13,41 +13,51 @@ const SocialLinks = ({ className, size = 's', ...props }: SocialLinksProps) => {
       <a
         href='https://vk.com/art_zykov'
         target='_blank'
+        rel='noopener noreferrer'
+        aria-label='Visit VK page of Artem Zykov'
         className={cn(styles.icon, styles[size])}
       >
-        <VKIcon />
+        <VKIcon alt='VK Icon' />
       </a>
 
       <a
         href='https://t.me/skaterpunisher'
         target='_blank'
+        rel='noopener noreferrer'
+        aria-label='Visit Telegram channel of Artem Zykov'
         className={cn(styles.icon, styles[size])}
       >
-        <TelegramIcon />
+        <TelegramIcon alt='Telegram Icon' />
       </a>
 
       <a
         href='https://www.instagram.com/art_zykov'
         target='_blank'
+        rel='noopener noreferrer'
+        aria-label='Visit Instagram profile of Artem Zykov'
         className={cn(styles.icon, styles[size])}
       >
-        <InstagramIcon />
+        <InstagramIcon alt='Instagram Icon' />
       </a>
 
       <a
         href='https://github.com/SkaterPunisher'
         target='_blank'
+        rel='noopener noreferrer'
+        aria-label='Visit GitHub profile of Artem Zykov'
         className={cn(styles.icon, styles[size])}
       >
-        <GithubIcon />
+        <GithubIcon alt='GitHub Icon' />
       </a>
 
       <a
         href='https://www.linkedin.com/in/artem-zykov-651672256/'
         target='_blank'
-        className={cn(styles.icon, styles.iconLinked, styles[size])}
+        rel='noopener noreferrer'
+        aria-label='Visit LinkedIn profile of Artem Zykov'
+        className={cn(styles.icon, styles[size])}
       >
-        <LinkedInIcon />
+        <LinkedInIcon alt='LinkedIn Icon' />
       </a>
     </div>
   );

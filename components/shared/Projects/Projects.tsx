@@ -34,7 +34,13 @@ const Projects = () => {
               Stack: {p.stack}
             </Text>
 
-            <a href={p.href} target='_blank' className={cn(styles.link)}>
+            <a
+              href={p.href}
+              target='_blank'
+              className={cn(styles.link)}
+              rel='noopener noreferrer'
+              aria-label={`Visit ${p.title}`}
+            >
               <Button
                 className={styles.button}
                 size='s'
