@@ -15,9 +15,19 @@ export const projects = [
       'This web application enables clients to find specialists for psychological support. It features role-based personal accounts for clients, specialists, administrators, and moderators. The platform also supports video meetings powered by Agora.io. Multilingual options and both dark and light themes are available to enhance user experience.',
     stack:
       'Next.js v.14, NextAuth (auth.js), JWT, TypeScript, i18next, Redux-Toolkit, RTK-Query, Axios, React Spectrum, Framer motion, SCSS, zod, react-hook-form',
-    img: '/images/empoint.webp',
+    img: '/images/producation.webp',
     button: 'On Request',
     href: 'https://t.me/skaterpunisher',
+  },
+  {
+    title: 'Producation',
+    description:
+      'This project is designed for instructors and learners. Instructors can create mini-courses and offer them for sale. Anyone can register and purchase any available courses. There are five types of roles: learner, instructor, moderator, administrator, and technical director. One of the interesting features is the "user impersonation" functionality, where an administrator can log in as either a learner or an instructor to understand and view the system from their perspective.',
+    stack:
+      'Next.js v.13, React v.18, JWT, TypeScript, i18next, Redux-Toolkit, RTK-Query, MUI, Framer motion, SCSS, zod, react-hook-form',
+    img: '/images/empoint.webp',
+    button: 'Overview',
+    href: 'https://producation.ru',
   },
   {
     title: 'Medalist',

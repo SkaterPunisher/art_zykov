@@ -8,7 +8,7 @@ export const technologies = [
     score: 80,
   },
   {
-    title: 'TypeScript, JavaScript',
+    title: 'TypeScript (JavaScript)',
     score: 80,
   },
   {
@@ -16,7 +16,7 @@ export const technologies = [
     score: 90,
   },
   {
-    title: 'Zustand',
+    title: 'Zustand, MobX',
     score: 70,
   },
   {
@@ -25,7 +25,7 @@ export const technologies = [
   },
 
   {
-    title: 'AntDesign, MUI, Tailwind, React Aria',
+    title: 'AntDesign, MUI, Tailwind, React Aria, NextUI',
     score: 70,
   },
   {
