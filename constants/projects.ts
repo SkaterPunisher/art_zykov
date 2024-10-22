@@ -2,7 +2,7 @@ export const projects = [
   {
     title: 'English-Zykova',
     description:
-      'This website was custom-built for an online English language studio in Russia. For convenient content management, the site is integrated with the CMS Sanity.io. It also supports multilingualism and offers several themes.',
+      'This website was custom-built for an online English language studio in Russia. For convenient content management, the site is integrated with the CMS Sanity.io. It also supports multilingualism, offers several themes, and includes an admin panel where courses, promotions, articles, and other content can be added.',
     stack:
       'Next.js v.13, TypeScript, i18next, Sanity.io, SCSS, Framer Motion, Zustand, react-hook-form, zod',
     img: '/images/english-zykova.webp',
