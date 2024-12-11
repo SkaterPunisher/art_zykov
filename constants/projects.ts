@@ -30,6 +30,26 @@ export const projects = [
     href: 'https://producation.ru',
   },
   {
+    title: 'KIT Global',
+    description:
+      'This project is a global catalog of business solutions, supporting multilingual capabilities and various currencies. It allows users worldwide to connect with service providers for marketing, content creation, and advertising services. The platform features role-based access, intuitive dashboards with analytics, financial reports, and billing tables, making it a versatile tool for business management on an international scale.',
+    stack:
+      'React v.18, Vite, JWT, TypeScript, i18next, MobX, Axios, SCSS, yup, react-hook-form',
+    img: '/images/kit-global.webp',
+    button: 'Overview',
+    href: 'https://platform.kit.global',
+  },
+  {
+    title: 'Kokoc Group',
+    description:
+      'This project is a comprehensive catalog of business solutions tailored for the Russian market. It offers a platform where users can find service providers for marketing, content creation, advertising setup, and more. The project features OAuth-based authentication and incorporates specific document management workflows. Additionally, the platform includes dashboards with detailed analytics, financial tables, and billing information, ensuring efficient business management.',
+    stack:
+      'React v.18, Vite, JWT, TypeScript, i18next, MobX, Axios, SCSS, yup, react-hook-form',
+    img: '/images/kokoc.webp',
+    button: 'Overview',
+    href: 'https://platform.kokocgroup.ru',
+  },
+  {
     title: 'Medalist',
     description:
       'An application for HR departments within companies designed to motivate employees. HR personnel can create awards and nominations, conduct draws, and distribute awards. The app also includes an internal store where prizes can be purchased with points from awards. Additionally, there is an admin panel for creating awards, departments, and companies.',
