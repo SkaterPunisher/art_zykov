@@ -9,4 +9,6 @@ export const otherSkills = [
   'PostMan',
   'Figma',
   'i18next',
+  'React Hook Form',
+  'Zod & Yup',
 ];
