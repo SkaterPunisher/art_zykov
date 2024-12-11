@@ -44,7 +44,7 @@ export const projects = [
     description:
       'This project is a comprehensive catalog of business solutions tailored for the Russian market. It offers a platform where users can find service providers for marketing, content creation, advertising setup, and more. The project features OAuth-based authentication and incorporates specific document management workflows. Additionally, the platform includes dashboards with detailed analytics, financial tables, and billing information, ensuring efficient business management.',
     stack:
-      'React v.18, Vite, JWT, TypeScript, i18next, MobX, Axios, SCSS, yup, react-hook-form',
+      'React v.18, Vite, OAuth + JWT, TypeScript, i18next, MobX, Axios, SCSS, yup, react-hook-form',
     img: '/images/kokoc.webp',
     button: 'Overview',
     href: 'https://platform.kokocgroup.ru',
