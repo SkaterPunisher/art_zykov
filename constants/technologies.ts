@@ -1,10 +1,10 @@
 export const technologies = [
   {
-    title: 'Next.js',
+    title: 'Next.js (v.12+)',
     score: 90,
   },
   {
-    title: 'React',
+    title: 'React (v.16+)',
     score: 80,
   },
   {
