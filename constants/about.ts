@@ -15,7 +15,7 @@ export const about = [
       'From September 2021 to August 2022, I single-handedly developed the Medalist project from scratch. For the first six months, I worked part-time because the startup was unfunded. After receiving a grant, I was moved to a full-time position. In July 2023, the funding ended, and I had to look for a new job.',
   },
   {
-    year: '2020 - 2024',
+    year: '2020 - 2025',
     description:
       'In my free time from work, I engage in freelancing. I take on small projects that do not have strict deadlines.',
   },
