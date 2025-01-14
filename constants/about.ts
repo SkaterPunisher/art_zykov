@@ -1,6 +1,6 @@
 export const about = [
   {
-    year: '2023 - 2024',
+    year: '2023 - 2025',
     description:
       "In December 2023, I joined 'ANO DPO NADPO' as a senior frontend developer. I am currently leading the development of the Empoint project from scratch and also providing support for another project within the company. I manage a team of four other developers, chose the technology stack for the project, and designed its architecture. I continue to work here to the present.",
   },
