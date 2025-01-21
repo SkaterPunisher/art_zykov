@@ -16,7 +16,7 @@ export const projects = [
     stack:
       'Next.js v.14, NextAuth (auth.js), JWT, TypeScript, i18next, Redux-Toolkit, RTK-Query, Axios, React Spectrum, Framer motion, SCSS, zod, react-hook-form',
     img: '/images/empoint.webp',
-    button: 'On Request',
+    button: 'Overview',
     href: 'https://empoint.ru',
   },
   {
