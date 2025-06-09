@@ -11,4 +11,5 @@ export const otherSkills = [
   'i18next',
   'React Hook Form',
   'Zod & Yup',
+  'SEO optimization',
 ];

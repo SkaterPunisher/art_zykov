@@ -16,7 +16,7 @@ export const technologies = [
     score: 90,
   },
   {
-    title: 'Zustand, MobX',
+    title: 'Zustand, MobX, Tanstack Query',
     score: 70,
   },
   {
