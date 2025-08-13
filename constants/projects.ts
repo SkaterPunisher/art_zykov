@@ -1,5 +1,15 @@
 export const projects = [
   {
+    title: 'Class-Chat',
+    description:
+      'This web application is an admin panel integrated with Telegram bots for managing the educational process. Students register via bots, and teachers can send homework, check submissions, manage groups, and run mass mailings without direct messaging. The platform includes a schedule module with two views — card view and weekly view with time slots — where teachers can see and manage their lessons, cancel classes, and automatically notify all participants. Any schedule changes are reflected instantly, and the system stores all data in connected databases.',
+    stack:
+      'NestJS, React 19, Telegraf, PostgreSQL, Redis, TypeScript, Vite, Zustand, Tanstack Query, Mantine UI',
+    img: '/images/class-сhat.webp',
+    button: 'On Request',
+    href: 'https://t.me/skaterpunisher',
+  },
+  {
     title: 'English-Zykova',
     description:
       'This website was custom-built for an online English language studio in Russia. For convenient content management, the site is integrated with the CMS Sanity.io. It also supports multilingualism, offers several themes, and includes an admin panel where courses, promotions, articles, and other content can be added.',
