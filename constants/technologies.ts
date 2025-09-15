@@ -5,27 +5,27 @@ export const technologies = [
   },
   {
     title: 'React (v.16+)',
-    score: 80,
+    score: 85,
   },
   {
     title: 'TypeScript (JavaScript)',
-    score: 80,
+    score: 85,
   },
   {
     title: 'Redux-Toolkit, RTK-Query, REST API, Axios, Socket.io',
-    score: 90,
+    score: 95,
   },
   {
     title: 'Zustand, MobX, Tanstack Query',
-    score: 70,
+    score: 85,
   },
   {
     title: 'HTML, SCSS & CSS',
-    score: 80,
+    score: 85,
   },
 
   {
-    title: 'AntDesign, MUI, Tailwind, React Aria, NextUI',
+    title: 'AntDesign, Mantine UI, Tailwind, React Aria, NextUI',
     score: 70,
   },
   {

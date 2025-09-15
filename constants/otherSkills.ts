@@ -1,4 +1,7 @@
 export const otherSkills = [
+  'NestJS',
+  'Telegraf',
+  'Vite',
   'Git',
   'Sanity.io',
   'Supabase',
