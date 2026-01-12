@@ -1,5 +1,14 @@
 export const projects = [
   {
+    title: 'Sberbank',
+    description:
+      'This project is an internal enterprise platform for Sber, centered around a complex admin panel. The admin interface is used to manage users, system settings, and business logic. A significant part of the project is dedicated to working with multiple microphone devices, including their configuration, switching, and state management. The application is built to handle high-load scenarios and integrates with internal corporate services.',
+    stack: 'React, TypeScript, Vite, Zustand, Tanstack Query',
+    img: '/images/sber.webp',
+    button: 'On Request',
+    href: 'https://t.me/skaterpunisher',
+  },
+  {
     title: 'Class-Chat',
     description:
       'This web application is an admin panel integrated with Telegram bots for managing the educational process. Students register via bots, and teachers can send homework, check submissions, manage groups, and run mass mailings without direct messaging. The platform includes a schedule module with two views — card view and weekly view with time slots — where teachers can see and manage their lessons, cancel classes, and automatically notify all participants. Any schedule changes are reflected instantly, and the system stores all data in connected databases.',

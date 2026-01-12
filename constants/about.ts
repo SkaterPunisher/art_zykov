@@ -1,5 +1,10 @@
 export const about = [
   {
+    year: '2025 - 2026',
+    description:
+      'In 2025, I joined BellIntegrator as a Lead Frontend Developer on a Sber project. I currently manage a frontend team of four developers, conduct regular 1-on-1 meetings, participate in hiring and onboarding, and support the professional growth of team members. I am responsible for planning and distributing tasks, aligning frontend development with business requirements, making architectural decisions, and ensuring high code quality across the project.',
+  },
+  {
     year: '2023 - 2025',
     description:
       "In December 2023, I joined 'ANO DPO NADPO' as a senior frontend developer. I am currently leading the development of the Empoint project from scratch and also providing support for another project within the company. I manage a team of four other developers, chose the technology stack for the project, and designed its architecture. I continue to work here to the present.",
