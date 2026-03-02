@@ -1,13 +1,13 @@
 export const projects = [
-  {
-    title: 'Sberbank',
-    description:
-      'This project is an internal enterprise platform for Sber, centered around a complex admin panel. The admin interface is used to manage users, system settings, and business logic. A significant part of the project is dedicated to working with multiple microphone devices, including their configuration, switching, and state management. The application is built to handle high-load scenarios and integrates with internal corporate services.',
-    stack: 'React, TypeScript, Vite, Zustand, Tanstack Query',
-    img: '/images/sber.webp',
-    button: 'On Request',
-    href: 'https://t.me/skaterpunisher',
-  },
+  // {
+  //   title: 'Sberbank',
+  //   description:
+  //     'This project is an internal enterprise platform for Sber, centered around a complex admin panel. The admin interface is used to manage users, system settings, and business logic. A significant part of the project is dedicated to working with multiple microphone devices, including their configuration, switching, and state management. The application is built to handle high-load scenarios and integrates with internal corporate services.',
+  //   stack: 'React, TypeScript, Vite, Zustand, Tanstack Query',
+  //   img: '/images/sber.webp',
+  //   button: 'On Request',
+  //   href: 'https://t.me/skaterpunisher',
+  // },
   {
     title: 'Class-Chat',
     description:
