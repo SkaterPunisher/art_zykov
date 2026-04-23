@@ -5,7 +5,7 @@ import VKIcon from '@/icons/vk.svg';
 import TelegramIcon from '@/icons/telegram.svg';
 import InstagramIcon from '@/icons/instagram.svg';
 import GithubIcon from '@/icons/github.svg';
-// import LinkedInIcon from '@/icons/linkedin.svg';
+import LinkedInIcon from '@/icons/linkedin.svg';
 
 const SocialLinks = ({ className, size = 's', ...props }: SocialLinksProps) => {
   return (
@@ -50,15 +50,15 @@ const SocialLinks = ({ className, size = 's', ...props }: SocialLinksProps) => {
         <GithubIcon alt='GitHub Icon' />
       </a>
 
-      {/* <a
-        href='https://www.linkedin.com/in/artem-zykov-651672256/'
+      <a
+        href='https://www.linkedin.com/in/art-zykov'
         target='_blank'
         rel='noopener noreferrer'
         aria-label='Visit LinkedIn profile of Artem Zykov'
-        className={cn(styles.icon, styles[size])}
+        className={cn(styles.icon, styles.iconLinked, styles[size])}
       >
         <LinkedInIcon alt='LinkedIn Icon' />
-      </a> */}
+      </a>
     </div>
   );
 };
