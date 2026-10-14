@@ -4,11 +4,11 @@ export const headerLinks = [
     href: '#projects',
   },
   {
-    title: 'Technologies',
-    href: '#technologies',
+    title: 'Skills',
+    href: '#skills',
   },
   {
-    title: 'About me',
-    href: '#about',
+    title: 'Experience',
+    href: '#experience',
   },
 ];

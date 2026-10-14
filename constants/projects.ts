@@ -9,24 +9,23 @@ export const projects = [
   //   href: 'https://t.me/skaterpunisher',
   // },
   {
-    title: 'Class-Chat',
+    title: 'Enterprise Micro-Frontend Platform',
     description:
-      'This web application is an admin panel integrated with Telegram bots for managing the educational process. Students register via bots, and teachers can send homework, check submissions, manage groups, and run mass mailings without direct messaging. The platform includes a schedule module with two views — card view and weekly view with time slots — where teachers can see and manage their lessons, cancel classes, and automatically notify all participants. Any schedule changes are reflected instantly, and the system stores all data in connected databases.',
+      'A large-scale micro-frontend product for an enterprise client, developed at Bellintegrator. I lead 6 frontend engineers across 4 departments, designed the micro-frontend architecture and API contracts with backend teams. Built a custom MCP server that turns design layouts into production-ready UI code and introduced Spec-Driven Development with AI agents. Results: +25% frontend performance, test coverage raised to 60%, −30% time-to-market for new modules.',
     stack:
-      'NestJS, React 19, Telegraf, PostgreSQL, Redis, TypeScript, Vite, Zustand, Tanstack Query, Mantine UI',
-    img: '/images/class-сhat.webp',
-    button: 'On Request',
+      'React 19, TypeScript, Webpack, Vite, Micro-Frontends, Jest, React Testing Library, Styled Components, GitLab CI, MCP, AI Agents',
+    button: 'Under NDA',
     href: 'https://t.me/skaterpunisher',
   },
   {
-    title: 'English-Zykova',
+    title: 'Class-Chat',
     description:
-      'This website was custom-built for an online English language studio in Russia. For convenient content management, the site is integrated with the CMS Sanity.io. It also supports multilingualism, offers several themes, and includes an admin panel where courses, promotions, articles, and other content can be added.',
+      'SaaS for schools and tutors: a web admin panel plus Telegram and MAX messenger bots. Teachers manage groups, schedules with exceptions, attendance, homework and delayed broadcasts with file attachments. Multi-tenant model with 4 roles (JWT, RBAC guards), rate limiting and real-time notifications via Socket.IO. A provider-agnostic LLM module (YandexGPT) with system prompts managed from the admin panel without redeploys. Monorepo with shared types, deployed with Docker Compose and GitHub Actions to a VPS.',
     stack:
-      'Next.js v.13, TypeScript, i18next, Sanity.io, SCSS, Framer Motion, Zustand, react-hook-form, zod',
-    img: '/images/english-zykova.webp',
-    button: 'Overview',
-    href: 'https://english-zykova.ru/en',
+      'NestJS, React 19, TypeScript, PostgreSQL, TypeORM, Redis, Socket.IO, Telegraf, Vite, TanStack Query, Zustand, Mantine, Docker, nginx, GitHub Actions, YandexGPT',
+    img: '/images/class-сhat.webp',
+    button: 'Live site',
+    href: 'https://class-chat.ru',
   },
   {
     title: 'Empoint',
@@ -35,8 +34,18 @@ export const projects = [
     stack:
       'Next.js v.14, NextAuth (auth.js), JWT, TypeScript, i18next, Redux-Toolkit, RTK-Query, Axios, React Spectrum, Framer motion, SCSS, zod, react-hook-form',
     img: '/images/empoint.webp',
-    button: 'Overview',
+    button: 'Live site',
     href: 'https://empoint.ru',
+  },
+  {
+    title: 'English-Zykova',
+    description:
+      'Bilingual (ru/en) website for an online English language school. Built on Next.js App Router with SSR/SSG, SEO and localization via i18next + middleware. Content is managed in Sanity CMS (11 schemas: courses, tests, teachers, blog, prices) with an embedded Sanity Studio. Includes interactive level tests, a course cart and lead forms delivered to Telegram via a Next.js API route. Dockerized behind nginx with SSL and auto-deployed via GitHub Actions.',
+    stack:
+      'Next.js (App Router), TypeScript, Sanity, i18next, Zustand, React Aria, Framer Motion, Tailwind, SCSS, Docker, nginx, GitHub Actions',
+    img: '/images/english-zykova.webp',
+    button: 'Live site',
+    href: 'https://english-zykova.ru/en',
   },
   {
     title: 'Producation',
@@ -45,7 +54,7 @@ export const projects = [
     stack:
       'Next.js v.13, React v.18, JWT, TypeScript, i18next, Redux-Toolkit, RTK-Query, MUI, Framer motion, SCSS, zod, react-hook-form',
     img: '/images/producation.webp',
-    button: 'Overview',
+    button: 'Live site',
     href: 'https://producation.ru',
   },
   {
@@ -55,7 +64,7 @@ export const projects = [
     stack:
       'React v.18, Vite, JWT, TypeScript, i18next, MobX, Axios, SCSS, yup, react-hook-form',
     img: '/images/kit-global.webp',
-    button: 'Overview',
+    button: 'Live site',
     href: 'https://platform.kit.global',
   },
   {
@@ -65,7 +74,7 @@ export const projects = [
     stack:
       'React v.18, Vite, OAuth + JWT, TypeScript, i18next, MobX, Axios, SCSS, yup, react-hook-form',
     img: '/images/kokoc.webp',
-    button: 'Overview',
+    button: 'Live site',
     href: 'https://platform.kokocgroup.ru',
   },
   {
@@ -75,7 +84,7 @@ export const projects = [
     stack:
       'Next.js v.13, Keycloak, TypeScript, Redux-Toolkit, RTK-Query, Framer motion, SCSS, Tailwind, MUI, chart.js, Jest',
     img: '/images/medalist.webp',
-    button: 'Code Review',
+    button: 'Code',
     href: 'https://github.com/nifontpro/medalist-front/tree/develop_Artem',
   },
   {

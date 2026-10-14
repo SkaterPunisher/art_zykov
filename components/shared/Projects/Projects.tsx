@@ -16,8 +16,12 @@ const Projects = () => {
       <ul className={styles.list}>
         {projects.map((p) => (
           <li key={p.title} className={styles.project}>
-            <div className={styles.image}>
-              <Image fill src={p.img} alt={p.title} priority />
+            <div className={cn(styles.image, !p.img && styles.placeholder)}>
+              {p.img ? (
+                <Image fill src={p.img} alt={p.title} priority />
+              ) : (
+                <Text size='m'>NDA</Text>
+              )}
             </div>
 
             <div className={cn(styles.title, 'spacer-l')}>

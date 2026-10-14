@@ -7,22 +7,22 @@ import { Poppins } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
-  title: 'Art-Zykov | Frontend Developer | Interactive and Responsive Websites',
+  metadataBase: new URL('https://art-zykov.com'),
+  title: 'Artem Zykov | Lead Frontend / Fullstack Engineer',
   description:
-    'Professional frontend web development including responsive design, speed optimization, and intuitive user interfaces. Creating solutions that exceed expectations',
+    'Lead Frontend / Fullstack Engineer building commercial products since 2019. React, Next.js, NestJS, AI agents & MCP. I lead frontend teams and ship products end-to-end: database, API, UI, bots, CI/CD and hosting.',
   openGraph: {
-    title:
-      'Art-Zykov | Frontend Developer | Interactive and Responsive Websites',
+    title: 'Artem Zykov | Lead Frontend / Fullstack Engineer',
     description:
-      'Professional frontend web development including responsive design, speed optimization, and intuitive user interfaces. Creating solutions that exceed expectations',
+      'Lead Frontend / Fullstack Engineer building commercial products since 2019. React, Next.js, NestJS, AI agents & MCP. I lead frontend teams and ship products end-to-end: database, API, UI, bots, CI/CD and hosting.',
     images: {
       url: '/images/opengraph-logo_art-zykov.webp',
-      alt: 'Art-Zykov | Frontend Developer',
+      alt: 'Artem Zykov | Lead Frontend / Fullstack Engineer',
     },
     type: 'website',
-    siteName: 'Art-Zykov | Frontend Developer',
+    siteName: 'Artem Zykov | Lead Frontend / Fullstack Engineer',
     url: `https://art-zykov.com`,
-    locale: 'en-EN',
+    locale: 'en_US',
   },
 };
 

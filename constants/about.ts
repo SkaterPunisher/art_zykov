@@ -1,42 +1,110 @@
-export const about = [
+export const experience = [
   {
-    year: '2025 - 2026',
-    description:
-      'In 2025, I joined BellIntegrator as a Lead Frontend Developer on a Sber project. I currently manage a frontend team of four developers, conduct regular 1-on-1 meetings, participate in hiring and onboarding, and support the professional growth of team members. I am responsible for planning and distributing tasks, aligning frontend development with business requirements, making architectural decisions, and ensuring high code quality across the project.',
+    role: 'Lead Frontend Developer',
+    company: 'Bellintegrator',
+    location: 'Moscow · Remote',
+    period: 'Feb 2025 — Present',
+    summary:
+      'Lead 6 frontend engineers across 4 departments on a large-scale micro-frontend product. Own technical strategy, hiring and onboarding, performance reviews, quarterly planning and end-to-end delivery. Drive AI-assisted development across the team.',
+    achievements: [
+      'AI: built a custom MCP server on top of Pixso MCP — it fetches design layouts as JSON, maps them to design-system components and generates production-ready UI code',
+      'AI: introduced Spec-Driven Development with AI agents — frontend tasks go from specification to implementation through an agent-based workflow',
+      'Designed a scalable micro-frontend architecture; defined API contracts and integrations together with backend teams',
+      'Led a large-scale refactoring: +25% frontend performance, cross-browser and responsive',
+      'Built a testing process from scratch (Jest, RTL): coverage raised to 60%',
+      'Set up CI/CD on GitLab CI, introduced coding standards and a code-review process',
+      'Aligned 4 departments: −30% time-to-market for new modules; delivered a dedicated admin panel',
+    ],
+    stack:
+      'React 19, TypeScript, Webpack, Vite, Jest, React Testing Library, Styled Components, Micro-Frontends, GitLab CI, MCP, AI Agents, SDD',
   },
   {
-    year: '2023 - 2025',
-    description:
-      "In December 2023, I joined 'ANO DPO NADPO' as a senior frontend developer. I am currently leading the development of the Empoint project from scratch and also providing support for another project within the company. I manage a team of four other developers, chose the technology stack for the project, and designed its architecture. I continue to work here to the present.",
+    role: 'Senior Frontend Developer / Team Lead',
+    company: 'ANO DPO NADPO',
+    location: 'Moscow · Remote',
+    period: 'Dec 2023 — Feb 2025',
+    summary:
+      'Led a team of 4 developers across two projects (including Empoint): task distribution, code reviews and delivery. Chose the technology stack and designed the project architectures.',
+    achievements: [
+      'Designed a full-stack architecture with i18next localization for both server and client components in two projects',
+      'Integrated WebSocket notifications for real-time data transmission',
+      'Configured NextAuth (middleware + protected routes) with a role-based access model',
+      'Integrated online payments',
+      'Developed video conferencing with Agora.io',
+    ],
+    stack:
+      'Next.js 14, React 18, NextAuth, TypeScript, i18next, Redux Toolkit, RTK Query, Socket.IO, React Spectrum, MUI, Framer Motion, SCSS, React Hook Form, Zod',
   },
   {
-    year: '2023',
-    description:
-      'From August to December 2023, I worked at Cloud Technologies. I developed new features for existing projects as part of a small team. The company specializes in developing applications for clinics and hospitals in Moscow and the Moscow region.',
+    role: 'Frontend Developer',
+    company: 'Freelance',
+    location: 'Remote',
+    period: '2019 — Present',
+    summary:
+      'Design, build and deploy products end-to-end: database, API, frontend, bots, CI/CD and hosting.',
+    achievements: [
+      'Class-Chat — SaaS for schools and tutors: NestJS API, React 19 admin panel, Telegram and MAX bots, LLM module (YandexGPT)',
+      'English-Zykova — bilingual Next.js website with Sanity CMS, interactive level tests and lead forms delivered to Telegram',
+      'Infrastructure: Docker Compose, nginx, SSL, CI/CD on GitHub Actions to a VPS',
+    ],
+    stack:
+      'NestJS, React 19, Next.js, TypeScript, PostgreSQL, TypeORM, Redis, Socket.IO, Telegraf, Sanity, Docker, nginx, GitHub Actions',
   },
   {
-    year: '2021 - 2023',
-    description:
-      'From September 2021 to August 2022, I single-handedly developed the Medalist project from scratch. For the first six months, I worked part-time because the startup was unfunded. After receiving a grant, I was moved to a full-time position. In July 2023, the funding ended, and I had to look for a new job.',
+    role: 'Frontend Developer',
+    company: 'Cloud Technologies',
+    location: 'Taganrog · Remote',
+    period: 'Sep 2023 — Dec 2023',
+    summary:
+      'Developed applications for clinics and hospitals in Moscow and the Moscow region.',
+    achievements: [
+      'Developed and improved an existing React + TypeScript SPA for medical institutions',
+      'Worked with large amounts of data and complex tables (Ant Design)',
+    ],
+    stack:
+      'TypeScript, React, Redux Toolkit, Redux Thunk, Axios, REST API, Styled Components, Ant Design',
   },
   {
-    year: '2020 - 2025',
-    description:
-      'In my free time from work, I engage in freelancing. I take on small projects that do not have strict deadlines.',
+    role: 'Frontend Developer',
+    company: 'Nectarin',
+    location: 'Moscow · Remote',
+    period: 'Oct 2021 — Sep 2023',
+    summary:
+      'Built the frontend of the Medalist SSR application from scratch — first on Next.js 12, then on Next.js 13.',
+    achievements: [
+      'Redux Toolkit + RTK Query for requests, caching and infinite scroll',
+      'Configured NextAuth with Keycloak and middleware-based route protection',
+      'Built dashboards for employees and owners with complex charts and tables (MUI, chart.js)',
+      'Added bulk user import from Excel files (xlsx) and notifications',
+      'Responsive layout for all devices (SCSS, Tailwind), animations with Framer Motion',
+    ],
+    stack:
+      'Next.js 12–13, TypeScript, Redux Toolkit, RTK Query, Framer Motion, SCSS, Tailwind, MUI, chart.js',
   },
   {
-    year: '2015 - 2019',
-    description:
-      'I worked as a manager at a private firm. I distributed tasks within the team, conducted negotiations with the main clients and partners of the center, searched for new team members, and conducted interviews.',
+    role: 'Team Manager',
+    company: 'Private company',
+    location: 'Nizhny Novgorod',
+    period: '2015 — 2020',
+    summary: '',
+    achievements: [
+      'Conducted hiring interviews',
+      'Managed stakeholder communication',
+      'Distributed and prioritised tasks',
+    ],
+    stack: '',
+  },
+];
+
+export const education = [
+  {
+    degree: 'B.Sc. Computer Science',
+    place: 'Lobachevsky State University, Nizhny Novgorod',
+    period: '2010 — 2014',
   },
   {
-    year: '2014 - 2015',
-    description:
-      'After graduating from university, I worked for a year as a software engineer at NIIRT in Nizhny Novgorod. I was involved in developing various modules using QT and C++.',
-  },
-  {
-    year: '2011 - 2014',
-    description:
-      'I received a higher education in Mathematics and Computer Science at one of the top universities in Nizhny Novgorod, Lobachevsky State University.',
+    degree: 'Job retraining: Frontend Developer (React)',
+    place: 'Innopolis University, Kazan',
+    period: '2022',
   },
 ];
