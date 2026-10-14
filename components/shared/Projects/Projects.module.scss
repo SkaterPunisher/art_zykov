@@ -89,6 +89,10 @@
         gap: 8px;
 
         .tag {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
           padding: 4px 12px;
           border-radius: 20px;
           background: var(--background_light);

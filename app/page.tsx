@@ -9,12 +9,8 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Reveal>
-        <Projects />
-      </Reveal>
-      <Reveal>
-        <Technologies />
-      </Reveal>
+      <Projects />
+      <Technologies />
       <Reveal>
         <About />
       </Reveal>

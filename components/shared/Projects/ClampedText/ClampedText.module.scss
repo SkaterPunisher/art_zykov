@@ -1,0 +1,17 @@
+.trigger {
+  display: block;
+  width: 100%;
+}
+
+.plain {
+  cursor: inherit;
+}
+
+.clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+  color: var(--white);
+}

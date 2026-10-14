@@ -6,6 +6,9 @@ import Image from 'next/image';
 import Text from '@/components/ui/Text/Text';
 import Button from '@/components/ui/Button/Button';
 import ProjectDetails from './ProjectDetails/ProjectDetails';
+import ClampedText from './ClampedText/ClampedText';
+import Tooltip from '@/components/ui/Tooltip/Tooltip';
+import Reveal from '@/components/ui/Reveal/Reveal';
 
 const VISIBLE_TAGS = 6;
 
@@ -21,7 +24,12 @@ const Projects = () => {
           const tags = p.stack.split(', ');
 
           return (
-            <li key={p.title} className={styles.project}>
+            <Reveal
+              tag='li'
+              key={p.title}
+              className={styles.project}
+              delay={(index % 2) * 0.15}
+            >
               <div className={cn(styles.image, !p.img && styles.placeholder)}>
                 {p.img ? (
                   <Image
@@ -42,9 +50,11 @@ const Projects = () => {
                 </Text>
               </div>
 
-              <Text className='spacer-m' size='s'>
-                {p.summary}
-              </Text>
+              <ClampedText
+                className='spacer-m'
+                text={p.description}
+                lines={6}
+              />
 
               <ul className={cn(styles.tags, 'spacer-l')}>
                 {tags.slice(0, VISIBLE_TAGS).map((tag) => (
@@ -53,10 +63,15 @@ const Projects = () => {
                   </li>
                 ))}
                 {tags.length > VISIBLE_TAGS && (
-                  <li className={styles.tag}>
-                    <Text size='xs' color='gray'>
-                      +{tags.length - VISIBLE_TAGS}
-                    </Text>
+                  <li>
+                    <Tooltip
+                      content={tags.slice(VISIBLE_TAGS).join(', ')}
+                      triggerClassName={styles.tag}
+                    >
+                      <Text tag='span' size='xs' color='gray'>
+                        +{tags.length - VISIBLE_TAGS}
+                      </Text>
+                    </Tooltip>
                   </li>
                 )}
               </ul>
@@ -79,7 +94,7 @@ const Projects = () => {
                   placeholder={p.button}
                 />
               </div>
-            </li>
+            </Reveal>
           );
         })}
       </ul>

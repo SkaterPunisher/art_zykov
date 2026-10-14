@@ -1,0 +1,50 @@
+.trigger {
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: help;
+}
+
+.tooltip {
+  max-width: min(440px, calc(100vw - 32px));
+  padding: 10px 14px;
+  border-radius: 8px;
+  background: var(--background_light);
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.5);
+  color: var(--white);
+  font-size: 14px;
+  line-height: 140%;
+
+  &[data-entering] {
+    animation: fade 150ms;
+  }
+
+  &[data-exiting] {
+    animation: fade 150ms reverse ease-in;
+  }
+
+  &[data-placement='bottom'] .arrow svg {
+    transform: rotate(180deg);
+  }
+
+  &[data-placement='left'] .arrow svg {
+    transform: rotate(-90deg);
+  }
+
+  &[data-placement='right'] .arrow svg {
+    transform: rotate(90deg);
+  }
+}
+
+.arrow svg {
+  display: block;
+  fill: var(--background_light);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+}
