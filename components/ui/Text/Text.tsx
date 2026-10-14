@@ -7,15 +7,18 @@ const Text = ({
   className,
   size = 's',
   color = 'white',
+  tag = 'p',
   ...props
 }: TextProps) => {
+  const Component = tag;
+
   return (
-    <p
+    <Component
       className={cn(styles.text, styles[size], styles[color], className)}
       {...props}
     >
       {children}
-    </p>
+    </Component>
   );
 };
 

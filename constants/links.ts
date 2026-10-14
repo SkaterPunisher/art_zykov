@@ -11,4 +11,8 @@ export const headerLinks = [
     title: 'Experience',
     href: '#experience',
   },
+  {
+    title: 'Contact',
+    href: '#contact',
+  },
 ];

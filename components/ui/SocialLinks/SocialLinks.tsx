@@ -15,7 +15,7 @@ const SocialLinks = ({ className, size = 's', ...props }: SocialLinksProps) => {
         aria-label='Visit Telegram channel of Artem Zykov'
         className={cn(styles.icon, styles[size])}
       >
-        <TelegramIcon alt='Telegram Icon' />
+        <TelegramIcon aria-hidden='true' />
       </a>
 
       <a
@@ -25,7 +25,7 @@ const SocialLinks = ({ className, size = 's', ...props }: SocialLinksProps) => {
         aria-label='Visit GitHub profile of Artem Zykov'
         className={cn(styles.icon, styles[size])}
       >
-        <GithubIcon alt='GitHub Icon' />
+        <GithubIcon aria-hidden='true' />
       </a>
 
       <a
@@ -35,7 +35,7 @@ const SocialLinks = ({ className, size = 's', ...props }: SocialLinksProps) => {
         aria-label='Visit LinkedIn profile of Artem Zykov'
         className={cn(styles.icon, styles.iconLinked, styles[size])}
       >
-        <LinkedInIcon alt='LinkedIn Icon' />
+        <LinkedInIcon aria-hidden='true' />
       </a>
     </div>
   );

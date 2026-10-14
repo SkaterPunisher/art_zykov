@@ -1,0 +1,36 @@
+.list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  .item {
+    cursor: pointer;
+    text-wrap: nowrap;
+    width: fit-content;
+
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -3px;
+      height: 2px;
+      background-image: linear-gradient(
+        270deg,
+        #13adc7 0%,
+        #6978d1 66.67%,
+        #945dd6 100%
+      );
+      background-repeat: no-repeat;
+      background-size: 0% 100%;
+      transition: background-size 0.3s ease;
+    }
+
+    &:hover::after,
+    &.active::after {
+      background-size: 100% 100%;
+    }
+  }
+}

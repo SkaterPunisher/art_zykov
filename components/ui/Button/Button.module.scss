@@ -1,5 +1,8 @@
 .button {
   position: relative;
+  display: inline-block;
+  width: fit-content;
+  text-align: center;
   cursor: pointer;
   border-radius: 83px;
   background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
@@ -23,6 +26,11 @@
 
 .button:hover::before {
   opacity: 1;
+}
+
+.outline {
+  background: transparent;
+  box-shadow: inset 0 0 0 2px #6978d1;
 }
 
 .placeholder {

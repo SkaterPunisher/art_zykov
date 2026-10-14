@@ -45,26 +45,23 @@ const Hero = () => {
       </ul>
 
       <div className={styles.actions}>
-        <a
+        <Button
           href='https://t.me/skaterpunisher'
           target='_blank'
           rel='noopener noreferrer'
-          className={styles.link}
-        >
-          <Button
-            className={styles.button}
-            size='m'
-            placeholder='Get in Touch'
-          />
-        </a>
+          className={styles.button}
+          size='m'
+          placeholder='Get in Touch'
+        />
 
-        <a href='/Zykov_Artem_CV.pdf' download className={styles.link}>
-          <Button
-            className={cn(styles.button, styles.outline)}
-            size='m'
-            placeholder='Download CV'
-          />
-        </a>
+        <Button
+          href='/Zykov_Artem_CV.pdf'
+          download
+          className={styles.button}
+          size='m'
+          variant='outline'
+          placeholder='Download CV'
+        />
       </div>
 
       <DrawingIcon className={styles.icon} />

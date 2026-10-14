@@ -3,7 +3,15 @@
 * {
   box-sizing: border-box;
   border: none;
-  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid #6978d1;
+  outline-offset: 3px;
+}
+
+section[id] {
+  scroll-margin-top: 100px;
 }
 
 a {
@@ -89,20 +97,9 @@ ul {
   }
 }
 
-// _________________Hidden Scrollbar_________________
-/* Hidden scrollbar in Webkit-браузерах */
-::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hidden scrollbar in IE, Edge and Firefox */
-* {
-  -ms-overflow-style: none; /* for Internet Explorer and Edge */
-  scrollbar-width: none; /* for Firefox */
-}
-
-*::-webkit-scrollbar {
-  display: none;
+// _________________Scrollbar_________________
+html {
+  scrollbar-color: var(--background_light) var(--background);
 }
 
 // _________________Spacers_________________

@@ -83,8 +83,30 @@
         }
       }
 
-      .link {
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+
+        .tag {
+          padding: 4px 12px;
+          border-radius: 20px;
+          background: var(--background_light);
+        }
+      }
+
+      .actions {
         margin-top: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+
+        > * {
+          width: 100%;
+          padding-left: 12px;
+          padding-right: 12px;
+          white-space: nowrap;
+        }
       }
     }
   }

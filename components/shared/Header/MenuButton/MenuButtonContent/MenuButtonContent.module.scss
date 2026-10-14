@@ -33,7 +33,8 @@
           background-size: 0% 100%;
         }
 
-        &:hover::after {
+        &:hover::after,
+        &.active::after {
           background-size: 100% 100%;
         }
       }

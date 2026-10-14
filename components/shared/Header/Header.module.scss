@@ -1,7 +1,10 @@
 @import '@/styles/app.scss';
 
 .header {
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: var(--background);
   display: grid;
   grid-template-columns: [start] auto [endLogo] 1fr [startNav] auto [endNav];
 
@@ -32,40 +35,6 @@
     @include xs {
       display: flex;
       grid-column: startNav / endNav;
-    }
-
-    .list {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-
-      .item {
-        cursor: pointer;
-        text-wrap: nowrap;
-        width: fit-content;
-
-        position: relative;
-
-        &::after {
-          content: '';
-          position: absolute;
-          left: 0;
-          right: 0;
-          bottom: -3px;
-          height: 2px;
-          background-image: linear-gradient(
-            270deg,
-            #13adc7 0%,
-            #6978d1 66.67%,
-            #945dd6 100%
-          );
-          background-size: 0% 100%;
-        }
-
-        &:hover::after {
-          background-size: 100% 100%;
-        }
-      }
     }
   }
 

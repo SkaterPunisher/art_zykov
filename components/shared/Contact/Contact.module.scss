@@ -1,0 +1,86 @@
+@import '@/styles/app.scss';
+
+.section {
+  .description {
+    padding-left: 20px;
+
+    @include s {
+      padding-left: 60px;
+    }
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding-left: 20px;
+
+    @include s {
+      grid-template-columns: repeat(2, 1fr);
+      padding-left: 60px;
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+
+      .label {
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      .row {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      .link {
+        width: fit-content;
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: -3px;
+          height: 2px;
+          background-image: linear-gradient(
+            270deg,
+            #13adc7 0%,
+            #6978d1 66.67%,
+            #945dd6 100%
+          );
+          background-repeat: no-repeat;
+          background-size: 0% 100%;
+          transition: background-size 0.3s ease;
+        }
+
+        &:hover::after {
+          background-size: 100% 100%;
+        }
+      }
+
+      .copy {
+        padding: 4px 12px;
+        border-radius: 20px;
+        background: var(--background_light);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+    padding-left: 20px;
+
+    @include s {
+      padding-left: 60px;
+    }
+  }
+}

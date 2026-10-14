@@ -2,19 +2,16 @@ import Button from '@/components/ui/Button/Button';
 import styles from './NotFoundPage.module.scss';
 import Heading from '@/components/ui/Heading/Heading';
 import Text from '@/components/ui/Text/Text';
-import Link from 'next/link';
 
 const NotFoundPage = () => {
   return (
     <section className={styles.wrapper}>
       <div className={styles.content}>
-        <Heading tag='h3'>Такой страницы нет</Heading>
+        <Heading tag='h3'>Page not found</Heading>
         <Text style={{ textAlign: 'center' }}>
-          Убедитесь в правильности URL-адреса запрашиваемой страницы.
+          Make sure the URL of the requested page is correct.
         </Text>
-        <Link href='/'>
-          <Button size='s' placeholder='На главную' />
-        </Link>
+        <Button href='/' size='s' placeholder='Back to home' />
       </div>
     </section>
   );

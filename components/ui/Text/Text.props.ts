@@ -6,4 +6,5 @@ export type TextProps = DetailedHTMLProps<
 > & {
   size?: 'xs' | 's' | 'm' | 'l';
   color?: 'white' | 'black' | 'gray';
+  tag?: 'p' | 'span';
 };
