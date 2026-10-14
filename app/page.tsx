@@ -11,9 +11,7 @@ export default function Home() {
       <Hero />
       <Projects />
       <Technologies />
-      <Reveal>
-        <About />
-      </Reveal>
+      <About />
       <Reveal>
         <Contact />
       </Reveal>

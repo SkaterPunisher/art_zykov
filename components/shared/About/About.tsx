@@ -3,6 +3,7 @@ import styles from './About.module.scss';
 import cn from 'classnames';
 import Text from '@/components/ui/Text/Text';
 import { education, experience } from '@/constants/about';
+import Reveal from '@/components/ui/Reveal/Reveal';
 
 const About = () => {
   return (
@@ -13,7 +14,11 @@ const About = () => {
 
       <ul className={cn(styles.list, 'spacer-xxl')}>
         {experience.map((e) => (
-          <li key={`${e.company}-${e.period}`} className={styles.item}>
+          <Reveal
+            tag='li'
+            key={`${e.company}-${e.period}`}
+            className={styles.item}
+          >
             <div className={styles.dot} />
 
             <Text className={cn(styles.meta, 'spacer-s')} size='xs' color='gray'>
@@ -47,7 +52,7 @@ const About = () => {
                 Stack: {e.stack}
               </Text>
             )}
-          </li>
+          </Reveal>
         ))}
       </ul>
 
@@ -57,7 +62,7 @@ const About = () => {
 
       <ul className={styles.list}>
         {education.map((e) => (
-          <li key={e.degree} className={styles.item}>
+          <Reveal tag='li' key={e.degree} className={styles.item}>
             <div className={styles.dot} />
 
             <Text className={cn(styles.meta, 'spacer-s')} size='xs' color='gray'>
@@ -71,7 +76,7 @@ const About = () => {
             <Text className={styles.company} size='s'>
               {e.place}
             </Text>
-          </li>
+          </Reveal>
         ))}
       </ul>
     </section>
